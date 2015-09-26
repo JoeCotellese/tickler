@@ -19,7 +19,6 @@ SUBJECT = "Tickler Files for {0}".format(datetime.now().strftime("%A, %b %d"))
 def check_tickler_file(name):
     try:
         d = dparser.parse(name,fuzzy=True).date()
-        print d
         if d == date.today():
             return True
         else:
@@ -54,8 +53,8 @@ directory = data['other']['directory']
 
 for root,dirs, files in os.walk(directory):
     for name in files:
-        f = join(root,name)
         if (check_tickler_file(name)==True):
+            f = join(root,name)
             output.append(f)
 if output:
     send_mail(output)
