@@ -1,8 +1,8 @@
 {
 	"email":{
 		"host": "",
-		"user": "",
-		"passwd": "",
+		"username": "",
+		"password": "",
 		"from":"",
 		"to": ""
 	},
