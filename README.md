@@ -39,6 +39,7 @@ Edit the file, filling in email information and the tickler folder diretctory.
 
 Then, setup cron or launchctl to run the script everday at a specific time. 
 
+I've also included an example PLIST file if you're running OS X
 
 ## Support
 
