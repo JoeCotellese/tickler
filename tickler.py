@@ -6,11 +6,10 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEBase import MIMEBase
 from email import Encoders
 from os.path import join
-from datetime import datetime
+from datetime import *
 import json
 import dateutil.parser as dparser
-from datetime import *
-import fnmatch
+
 
 # GLOBALS Settings
 SUBJECT = "Tickler Files for {0}".format(datetime.now().strftime("%A, %b %d"))
