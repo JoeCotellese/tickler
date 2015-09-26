@@ -43,10 +43,17 @@ def send_mail(output):
     server.sendmail(data['email']['from'], data['email']['to'], msg.as_string())
 
 
-with open('config.json') as json_data_file:
-    data = json.load(json_data_file)
+def load_config():
+    home_dir = os.path.expanduser("~")
+    data = {}
+    try:
+        with open(os.path.join(home_dir,'.tickler/config.json')) as json_data_file:
+            data = json.load(json_data_file)
+    except IOError:
+        pass
+    return data
 
-
+data = load_config()
 directory = data['other']['directory']
 
 
