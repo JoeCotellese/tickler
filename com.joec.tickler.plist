@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/Volumes/Users/jcotellese/virtualenvs/tickler/bin</string>
+		<key>PYTHONPATH</key>
+		<string>/Volumes/Users/jcotellese/virtualenvs/tickler/lib/python2.7</string>
+	</dict>
+	<key>Label</key>
+	<string>local.job</string>
+	<key>Program</key>
+	<string>PATH TO SCRIPT/tickler.py</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/local.job.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/local.job.out</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>6</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

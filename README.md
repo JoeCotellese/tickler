@@ -29,12 +29,13 @@ Tickler requires the following installed:
 * json
 
 
-
 ## Usage
 
 Usage is pretty simple. 
 
-Clone config.json-example and fill in the config variables.
+Create the directory .tickler in your home directory.
+Copy config.json-example as config.json into your home directory.
+Edit the file, filling in email information and the tickler folder diretctory.
 
 Then, setup cron or launchctl to run the script everday at a specific time. 
 
