@@ -22,6 +22,13 @@ Tickler then runs everyday at 6:00am emailing me the days files.
 
 ## Installation
 
+### Dependencies
+
+Tickler requires the following installed:
+* dateutil
+* json
+
+
 
 ## Usage
 
