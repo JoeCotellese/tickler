@@ -1,0 +1,12 @@
+{
+	"email":{
+		"host": "",
+		"user": "",
+		"passwd": "",
+		"from":"",
+		"to": ""
+	},
+	"other": {
+		"directory": ""
+	}
+}
